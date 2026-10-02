@@ -1,0 +1,173 @@
+/* ============================================================
+   PORTFOLIO ALFRED N. TAWAGA
+   Override du template Toplax — Charte verte digitale
+   NE MODIFIE PAS la disposition, uniquement les couleurs
+   ============================================================ */
+
+:root {
+    /* Palette verte digitale (remplace le orange du template) */
+    --primary-color     : #0F172A;   /* Bleu nuit pro */
+    --secondary-color   : #F0FDF4;   /* Vert très clair */
+    --text-color        : #64748B;   /* Gris ardoise */
+    --accent-color      : #10B981;   /* Vert émeraude */
+    --white-color       : #FFFFFF;
+    --divider-color     : #E2E8F0;
+    --dark-divider-color: #FFFFFF1A;
+    --error-color       : rgb(230, 87, 87);
+    --default-font      : "Manrope", sans-serif;
+}
+
+/* --- Curseur désactivé (plus sobre) --- */
+.cb-cursor {
+    display: none !important;
+}
+
+/* --- Preloader : fond bleu nuit, cercle vert --- */
+.preloader {
+    background-color: #0F172A;
+}
+.loading {
+    border-color: transparent var(--accent-color) transparent var(--accent-color);
+}
+
+/* --- Menu actif vert --- */
+.main-menu ul li .nav-link:hover,
+.main-menu ul li .nav-link:focus,
+.nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+/* --- Hero : gradient sobre --- */
+.hero {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
+.hero::before {
+    background: linear-gradient(270deg, transparent 40%, rgba(0,0,0,0.6) 100%);
+}
+.hero .section-title h1 span {
+    color: var(--accent-color);
+}
+
+/* --- Section subtitle --- */
+.section-title h3 {
+    color: var(--accent-color);
+}
+
+/* --- Boutons : vert émeraude --- */
+.btn-default {
+    background-color: var(--accent-color);
+}
+.btn-default::after {
+    background: var(--primary-color);
+}
+.btn-default span::after {
+    background: var(--accent-color);
+}
+.btn-default:hover span {
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+/* --- Compteurs verts --- */
+.company-experience-counter h2,
+.our-story-counter h3,
+.process-step-no h2 {
+    color: var(--accent-color) !important;
+}
+
+/* --- Process steps : actif en vert --- */
+.process-step-item.active::before,
+.process-step-item:hover::before {
+    background: var(--accent-color);
+}
+
+/* --- Project tags verts --- */
+.project-tag a::before {
+    background-color: var(--accent-color);
+    opacity: 100%;
+}
+.project-tag a {
+    color: var(--white-color);
+}
+
+/* --- Pricing highlighted box : vert --- */
+.pricing-box.highlighted-box {
+    background-color: var(--accent-color);
+}
+.pricing-title h2 {
+    color: var(--accent-color);
+}
+.pricing-box.highlighted-box .pricing-title h2 {
+    color: var(--white-color);
+}
+
+/* --- Testimonial rating étoiles vertes --- */
+.testimonial-item .testimonial-rating i,
+.client-testimonial-rating i,
+.genuine-rating ul li i {
+    color: var(--accent-color) !important;
+}
+
+/* --- Slider buttons verts --- */
+.testimonial-slider .testimonial-button-next,
+.testimonial-slider .testimonial-button-prev {
+    background: var(--accent-color);
+}
+.testimonial-slider .testimonial-button-next:hover,
+.testimonial-slider .testimonial-button-prev:hover {
+    background: var(--primary-color);
+}
+
+/* --- Post item button vert --- */
+.post-item-btn a {
+    background-color: var(--accent-color);
+}
+.post-item-btn a:hover {
+    background-color: var(--primary-color);
+}
+
+/* --- Footer : fond bleu nuit, accent vert --- */
+.main-footer {
+    background: url(../images/footer-bg.svg), #0F172A;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
+}
+.footer-social-links ul li a i {
+    color: var(--accent-color);
+}
+.footer-links ul li:hover a {
+    color: var(--accent-color);
+}
+
+/* --- Topbar : accent vert --- */
+.topbar-contact-info ul li .icon-box {
+    background: var(--accent-color);
+}
+.topbar-contact-info ul li:hover .icon-box {
+    background: var(--primary-color);
+}
+
+/* --- Sections avec fond gris clair --- */
+.our-process,
+.our-testimonial {
+    background: var(--secondary-color);
+}
+
+/* --- Smooth scroll --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Ajustement des icônes de service (couleur verte) --- */
+.service-item .icon-box img,
+.what-we-do-item .icon-box img {
+    filter: brightness(0) saturate(100%) invert(58%) sepia(75%) saturate(501%) hue-rotate(110deg) brightness(95%) contrast(90%);
+}
+
+/* --- Responsive --- */
+@media (max-width: 767px) {
+    .hero {
+        padding: 120px 0 60px;
+    }
+}

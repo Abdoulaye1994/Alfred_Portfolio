@@ -1,0 +1,14 @@
+<svg width="51" height="54" viewBox="0 0 180 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="alfredGreen" x1="48" y1="72" x2="150" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E9B5C"/>
+      <stop offset="1" stop-color="#68C65A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Alfred Tawaga compact monogram -->
+  <path d="M14 74 43 18h16l29 56H70l-7-14H39l-7 14H14Zm31-27h12l-6-14-6 14Z" fill="#0F2A4A"/>
+  <path d="M76 20h55v13h-20v41H96V33H76V20Z" fill="#0F2A4A"/>
+  <path d="M20 70c37-25 79-36 132-47l-9 14 21-7-8 19-13-10c-44 10-82 19-116 39l-7-8Z" fill="url(#alfredGreen)"/>
+  <path d="M22 70 34 51l10 16-22 8Z" fill="#F4B400"/>
+</svg>
